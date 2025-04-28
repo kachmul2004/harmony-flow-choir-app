@@ -83,15 +83,15 @@ const Community: React.FC = () => {
         {/* Member of the Month */}
         <section>
           <h2 className="text-lg font-semibold mb-3">Member of the Month</h2>
-          <Card className="bg-gradient-to-br from-primary/10 to-white border-primary/20">
+          <Card className="bg-gradient-to-br from-[#fef7cd]/10 to-[#fec6a1]/10 border-[#f97316]/20">
             <CardContent className="p-4">
               <div className="flex items-center mb-3">
                 <div className="relative mr-4">
-                  <Avatar className="h-16 w-16 border-2 border-primary">
+                  <Avatar className="h-16 w-16 border-2 border-[#f97316]">
                     <AvatarImage src={memberOfMonth.avatar} alt={memberOfMonth.name} />
                     <AvatarFallback>{memberOfMonth.name.slice(0, 2)}</AvatarFallback>
                   </Avatar>
-                  <div className="absolute -top-1 -right-1 bg-primary text-white rounded-full p-1">
+                  <div className="absolute -top-1 -right-1 bg-[#f97316] text-white rounded-full p-1">
                     <Award size={16} />
                   </div>
                 </div>
@@ -102,7 +102,7 @@ const Community: React.FC = () => {
               </div>
               <p className="text-sm text-gray-600 mb-3">{memberOfMonth.bio}</p>
               <div className="flex items-center text-sm text-gray-500">
-                <Star size={16} className="text-yellow-500 mr-1" />
+                <Star size={16} className="text-[#f97316] mr-1" />
                 <span>Recognized for outstanding contribution to the Harmony Voices choir</span>
               </div>
             </CardContent>
